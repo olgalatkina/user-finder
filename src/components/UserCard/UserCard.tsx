@@ -2,6 +2,7 @@ import { UserStat } from 'components/UserStat';
 import { LocalGithubUser } from 'types';
 import styles from './UserCard.module.scss';
 import { UserTitle } from 'components/UserTitle';
+import { UserInfo } from 'components/UserInfo';
 
 interface UserCardProps extends LocalGithubUser { }
 
@@ -24,6 +25,12 @@ export const UserCard = (props: UserCardProps) => (
       followers={props.followers}
       following={props.following}
       repos={props.repos}
+    />
+    <UserInfo
+      blog={props.blog}
+      company={props.company}
+      location={props.location}
+      twitter={props.twitter}
     />
   </div>
 );
