@@ -1,4 +1,4 @@
-import { ReactComponent as SearchIcon } from '../../assets/icon-search.svg';
+import { ReactComponent as SearchIcon } from 'assets/icon-search.svg';
 import styles from './Search.module.scss';
 import { Button } from 'components/Button';
 
